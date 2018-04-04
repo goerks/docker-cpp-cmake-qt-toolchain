@@ -14,10 +14,8 @@ RUN apt-get install -y doxygen gcovr graphviz cppcheck
 RUN apt-get install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls qtdeclarative5-test-plugin
 
 # create user and mark as sudo user
-RUN apt-get -y install sudo
 RUN useradd -ms /bin/bash developer
 RUN echo 'developer:developer' | chpasswd
-RUN usermod -aG sudo developer
 
 USER developer
 

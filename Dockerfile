@@ -1,4 +1,4 @@
-FROM ubuntu:16.10
+FROM ubuntu:17.10
 MAINTAINER mrbolae <michael.burkard@gmx.ch>
 
 # install base tools

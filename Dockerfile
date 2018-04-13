@@ -7,6 +7,10 @@ RUN apt-get install -y git aptitude vim build-essential
 
 # install basic toolchain
 RUN apt-get install -y cmake ninja-build clang
+
+# install test environment sources
+RUN apt-get install -y libgtest-dev
+
 # install optional toolchain
 RUN apt-get install -y doxygen gcovr graphviz cppcheck
 
